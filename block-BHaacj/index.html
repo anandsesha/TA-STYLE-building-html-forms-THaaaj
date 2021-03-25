@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Building HTML Forms | Assignment No 2</title>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="assets/stylesheets/style.css">
+        <!-- Font family -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <!-- Font Kit Code -->
+        <script src="https://kit.fontawesome.com/2e5837ff2f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container flex justify-around">
+                <a href="#"><img src="assets/media/logo.png" alt="Journey-logo">Journey</a>
+                <nav class="header-links">
+                    <ul class="flex">
+                        <li class="active">Home</li>
+                        <li>Top Destinations</li>
+                        <li>Recommended Places</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- Let's Begin Section -->
+            <section class="lets-begin-section">
+                <div class="container">
+                    <h1 class="begin-heading">Let's Begin</h1>
+                    <div class="circle-wrapper">
+                        <div class="circle"></div>
+                        <div class="circle big-circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <p class="begin-para">We assist you to choose the best.</p>
+                    <div class="btn-wrapper"><a class="down-btn" href="#"><i class="fas fa-chevron-down"></i></a></div>
+                    
+                    <div class="form-wrapper">
+                        <form action="index.html" class="form">
+                            <fieldset class="flex flex-start">
+                                <div class="destination">
+                                    <label class="label" for="destination">Choose Your Destination</label>
+                                    <input class="form-control dest-input" type="text" name="destination" id="destination" placeholder="Type your destination..">
+                                </div>
+                                <div class="drop-down rooms">
+                                    <label class="label" for="rooms">How many rooms?</label>
+                                    <select class="drop-option" name="room" id="room">
+                                        <option class="form-control room-input" value="1 Room">1 Room</option>
+                                        <option class="form-control room-input" value="1 Room">2 Rooms</option>
+                                        <option class="form-control room-input" value="1 Room">3 Rooms</option>
+                                    </select>
+                                </div>
+                                <div class="drop-down adult-child">
+                                    <label class="label" for="adults">Adults</label>
+                                    <select class="drop-option" name="adult" id="adult">
+                                        <option class="form-control" value="1">1</option>
+                                        <option class="form-control" value="2">2</option>
+                                        <option class="form-control" value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="drop-down adult-child">
+                                    <label class="label" for="rooms">Children</label>
+                                    <select class="drop-option" name="child" id="adult">
+                                        <option class="form-control" value="1">0</option>
+                                        <option class="form-control" value="1">1</option>
+                                        <option class="form-control" value="2">2</option>
+                                        <option class="form-control" value="3">3</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset class="flex flex-start flex-wrap">
+                                <div class="check-date">
+                                    <label class="label" for="check-in">Check In Date</label>
+                                    <input class="form-control" type="text" name="check-in" id="check-in" placeholder="Check In">
+                                </div>
+                                <div class="check-date">
+                                    <label class="label" for="check-out">Check Out Date</label>
+                                    <input class="form-control" type="text" name="check-out" id="check-out" placeholder="Check Out">
+                                </div>
+                                <input class="form-btn form-control" type="submit" name="submit" value="CHECK AVAILABILITY">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Continue Explore Section -->
+            <section class="explore-section">
+                <div class="container">
+                    <h2 class="explore-heading">Your <strong>Journey</strong> is Our priority</h2>
+                    <div class="container-sec center">
+                        <p class="explore-para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut, aliquam, 
+                            atque voluptate corporis porro placeat iste quis asper fuga eaque 
+                            repudiandae voluptates libero veniam tempore? Repellat voluptate hic debitis.
+                        </p>
+                        <a class="continue-btn" href="#">Continue Explore</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Places Section-->
+            <section class="places-section">
+                <!-- Europe -->
+                <article class="container flex">
+                    <img class="flex-48" src="assets/media/tm-img-01.jpg" alt="Image-1">  
+                    <div class="blue-wrapper flex flex-center">
+                        <div class="scroll-wrapper flex-10">
+                            <a class="scroll-image-btns" href="#"><i class="fas fa-chevron-circle-left"></i></a>
+                            <a class="scroll-image-btns" href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                        </div>
+                        <div class="place-card flex-48 flex-80">
+                            <h3 class="card-heading">Europe's most visited places</h3>
+                            <p class="card-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut, aliquam, 
+                                atque voluptate corporis porro placeat iste quis asper fuga eaque 
+                                repudiandae voluptates libero veniam hic debitis.
+                            </p>
+                            <a class="continue-btn cont-reading-btn" href="#">Continue Reading</a>
+                        </div>
+                    </div>                    
+                </article>
+                <!-- Asia -->
+                <article class="container flex flex-end">
+                    <div class="red-wrapper overlap-left flex flex-center">
+                        <div class="place-card flex-48 flex-80">
+                            <h3 class="card-heading">Asia's most popular places</h3>
+                            <p class="card-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut, aliquam, 
+                                atque voluptate corporis porro placeat iste quis asper fuga eaque 
+                                repudiandae voluptates libero veniam hic debitis.
+                            </p>
+                            <a class="continue-btn cont-reading-btn" href="#">Continue Reading</a>
+                        </div>
+                        <div class="scroll-wrapper flex-10">
+                            <a class="scroll-image-btns" href="#"><i class="fas fa-chevron-circle-left"></i></a>
+                            <a class="scroll-image-btns" href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <img class="flex-48" src="assets/media/tm-img-02.jpg" alt="Image-2">
+                </article>
+                <!-- America -->
+                <article class="container flex">
+                    <img class="flex-48" src="assets/media/tm-img-03.jpg" alt="Image-3">  
+                    <div class="blue-wrapper flex flex-center">
+                        <div class="scroll-wrapper flex-10">
+                            <a class="scroll-image-btns" href="#"><i class="fas fa-chevron-circle-left"></i></a>
+                            <a class="scroll-image-btns" href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                        </div>
+                        <div class="place-card flex-48 flex-80">
+                            <h3 class="card-heading">America's most famous places</h3>
+                            <p class="card-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut, aliquam, 
+                                atque voluptate corporis porro placeat iste quis asper fuga eaque 
+                                repudiandae voluptates libero veniam hic debitis.
+                            </p>
+                            <a class="continue-btn cont-reading-btn" href="#">Continue Reading</a>
+                        </div>
+                    </div>                    
+                </article>
+            </section>
+            <!-- Continents section -->
+            <section class="continents-section">
+                <div class="container flex justify-around">
+                    <div class="continent-wrapper">
+                        <img src="assets/media/north-america.png" alt="North-America">
+                        <p class="continent-name">North America</p>
+                    </div>
+                    <div class="continent-wrapper">
+                        <img src="assets/media/south-america.png" alt="South-America">
+                        <p class="continent-name">South America</p>
+                    </div>
+                    <div class="continent-wrapper">
+                        <img src="assets/media/europe.png" alt="Europe">
+                        <p class="continent-name">Europe</p>
+                    </div>
+                    <div class="continent-wrapper active-continent">
+                        <img src="assets/media/asia.png" alt="Asia">
+                        <p class="continent-name">Asia</p>
+                    </div>
+                    <div class="continent-wrapper">
+                        <img src="assets/media/africa.png" alt="Africa">
+                        <p class="continent-name">Africa</p>
+                    </div>
+                    <div class="continent-wrapper">
+                        <img src="assets/media/australia.png" alt="Australia">
+                        <p class="continent-name">Australia</p>
+                    </div>
+                    <div class="continent-wrapper">
+                        <img src="assets/media/antartica.png" alt="Antartica">
+                        <p class="continent-name">Antartica</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Cost Section -->
+            <section class="cost-section">
+                <div class="container">
+                    <div class="container-sec more-places-btn-wrapper">
+                        <div class="flex cost-cards">
+                            <img src="assets/media/tm-img-06.jpg" alt="Asia-Resort-Hotel">
+                            <div class="cost-description flex-60">
+                                <h4 class="cost-heading">Asia Resort Hotel</h4>
+                                <h6 class="cost-loaction">Singapore</h6>
+                                <p class="cost-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut, aliquam, 
+                                    atque voluptate corporis quis asper fuga eaque.
+                                </p>
+                            </div>
+                            <div class="rate flex flex-20">
+                                <img src="assets/media/button-curve.png" alt="button-curve">
+                                <div class="rate-more">
+                                    <h2 class="rate-value">$440</h2>
+                                    <a class="continue-btn" href="#">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex cost-cards">
+                            <img src="assets/media/tm-img-07.jpg" alt="Nullam-eget-pic">
+                            <div class="cost-description flex-60">
+                                <h4 class="cost-heading">Nullam eget est a nisl</h4>
+                                <h6 class="cost-loaction">Yangon, Myanmar</h6>
+                                <p class="cost-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut, aliquam, 
+                                    atque voluptate corporis quis asper fuga eaque.
+                                </p>
+                            </div>
+                            <div class="rate flex flex-20">
+                                <img src="assets/media/button-curve.png" alt="button-curve">
+                                <div class="rate-more">
+                                    <h2 class="rate-value">$450</h2>
+                                    <a class="continue-btn" href="#">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex cost-cards">
+                            <img src="assets/media/tm-img-05.jpg" alt="Proin-pic">
+                            <div class="cost-description flex-60">
+                                <h4 class="cost-heading">Proin Interdum Ullamcorper</h4>
+                                <h6 class="cost-loaction">Bangkok, Thailand</h6>
+                                <p class="cost-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut, aliquam, 
+                                    atque voluptate corporis quis asper fuga eaque.
+                                </p>
+                            </div>
+                            <div class="rate flex flex-20">
+                                <img src="assets/media/button-curve.png" alt="button-curve">
+                                <div class="rate-more">
+                                    <h2 class="rate-value">$460</h2>
+                                    <a class="continue-btn" href="#">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex cost-cards">
+                            <img src="assets/media/tm-img-04.jpg" alt="Lorem-pic">
+                            <div class="cost-description flex-60">
+                                <h4 class="cost-heading">Lorem Ipsum Dolor sit</h4>
+                                <h6 class="cost-loaction">Vientiene, Laos</h6>
+                                <p class="cost-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut, aliquam, 
+                                    atque voluptate corporis quis asper fuga eaque.
+                                </p>
+                            </div>
+                            <div class="rate flex flex-20">
+                                <img src="assets/media/button-curve.png" alt="button-curve">
+                                <div class="rate-more">
+                                    <h2 class="rate-value">$470</h2>
+                                    <a class="continue-btn" href="#">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="continue-btn" href="#">Show More Places</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Map and Form Section -->
+            <section class="map-form-section">
+                <div class="container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.9195155748066!2d76.35140455114227!3d32.20639932007404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1616693709717!5m2!1sen!2sin" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <form class="map-form" action="index.html">
+                        <fieldset>
+                            <div class="flex">
+                            <input class="form-control width-60" type="text" name="name" placeholder="Name">
+                            <input class="form-control" type="email" name="email" placeholder="Email">
+                            </div>
+                            <input class="form-control" type="text" name="subject" placeholder="Subject">
+                            <textarea class="text-area" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            <button class="map-button" name="submit">
+                                Send Message Now
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <small>Copyright &copy; 2020 Your Company. Designed by Template Mo.</small>
+            </div>
+        </footer>
+    </body>
+</html>
