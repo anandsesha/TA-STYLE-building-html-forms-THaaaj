@@ -15,13 +15,25 @@
         <!-- Header -->
         <header class="header">
             <div class="container flex justify-around">
-                <a href="#"><img src="assets/media/logo.png" alt="Journey-logo">Journey</a>
+                
+                <a class="flex" href="#">
+                    <img src="assets/media/logo.png" alt="Journey-logo">
+                    <strong>Journey</strong>
+                </a>
                 <nav class="header-links">
                     <ul class="flex">
-                        <li class="active">Home</li>
-                        <li>Top Destinations</li>
-                        <li>Recommended Places</li>
-                        <li>Contact Us</li>
+                        <li>
+                            <a class="active" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Top Destinations</a>
+                        </li>
+                        <li>
+                            <a href="#">Recommended Places</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -37,7 +49,11 @@
                         <div class="circle"></div>
                     </div>
                     <p class="begin-para">We assist you to choose the best.</p>
-                    <div class="btn-wrapper"><a class="down-btn" href="#"><i class="fas fa-chevron-down"></i></a></div>
+                    <div class="icon-box">
+                        <a class="down-btn" href="#">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
                     
                     <div class="form-wrapper">
                         <form action="index.html" class="form">
@@ -75,11 +91,11 @@
                             <fieldset class="flex flex-start flex-wrap">
                                 <div class="check-date">
                                     <label class="label" for="check-in">Check In Date</label>
-                                    <input class="form-control" type="text" name="check-in" id="check-in" placeholder="Check In">
+                                    <input class="form-control" type="date" name="check-in" id="check-in" placeholder="Check In">
                                 </div>
                                 <div class="check-date">
                                     <label class="label" for="check-out">Check Out Date</label>
-                                    <input class="form-control" type="text" name="check-out" id="check-out" placeholder="Check Out">
+                                    <input class="form-control" type="date" name="check-out" id="check-out" placeholder="Check Out">
                                 </div>
                                 <input class="form-btn form-control" type="submit" name="submit" value="CHECK AVAILABILITY">
                             </fieldset>
@@ -280,7 +296,10 @@
             <!-- Map and Form Section -->
             <section class="map-form-section">
                 <div class="container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.9195155748066!2d76.35140455114227!3d32.20639932007404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1616693709717!5m2!1sen!2sin" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.9195155748066!2d76.35140455114227!3d32.20639932007404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1616693709717!5m2!1sen!2sin" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="overlay"></div>
+                    </div>
                     <form class="map-form" action="index.html">
                         <fieldset>
                             <div class="flex">
