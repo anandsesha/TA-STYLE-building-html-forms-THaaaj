@@ -137,11 +137,11 @@ a {
     background-color: #fff;
 }
 
-.header a {
-    font-size: 48px;
+.header strong {
+    font-size: 32px;
     font-weight: 700;
     color: #272727;
-    display: flex;
+    /* display: flex; */
     text-transform: uppercase;
 }
 
@@ -149,7 +149,7 @@ a {
     margin-right: 18px;
 }
 
-.header-links li{
+.header-links li a{
     font-size: 16px;
     font-weight: 700;
     color: #272727;
@@ -161,6 +161,10 @@ a {
 }
 
 /* Let's Begin Section */
+
+.lets-begin-section {
+    text-align: center;
+}
 
 .begin-heading {
     font-size: 48px;
@@ -175,7 +179,7 @@ a {
 .lets-begin-section .container {
     background: linear-gradient(rgba(14,8,6,0.9),rgba(41,30,23, 0.5)),url("../media/banner.jpg") no-repeat;
     background-size: cover;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .circle {
@@ -209,24 +213,18 @@ a {
     color: white;
 }
 
-.btn-wrapper{
-    text-align: center;
-    background-color: var(--primary);
+.icon-box {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 907px;
-    top: 420px; 
+    background-color: var(--primary);
+    margin: 0 auto;
+    line-height: 40px;  
 }
 
 .form {    
     width: 870px;
     background-color: #fff;
-    /* height: 300px; */
     padding: 32px;
     margin-bottom: 56px;
 }
@@ -254,7 +252,7 @@ a {
     height: 36px;
     margin-top: 12px;
     font-size: 16px;
-    color: #272727;
+    color: #908e8c;
     font-weight: 300;
     outline: 0;
     border: 0;
@@ -300,12 +298,12 @@ select {
 }
 
 .check-date {
-    margin: 24px 12px 0 0;    
+    margin: 24px 12px 0 0; 
 }
 
 .form-btn {
     margin-top: 52px;
-    width: 42%;
+    width: 50%;
     background-color: var(--primary);
     font-weight: 600;
     color: #fff;
@@ -507,6 +505,19 @@ select {
     right: 300px;
     border: 1px solid #c5c4c2;
     border-radius: 8px;
+}
+
+.map-wrapper {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .width-60 {
